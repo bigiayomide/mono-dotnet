@@ -67,7 +67,7 @@ namespace Mono.Net.Sdk.Account
             if (string.IsNullOrWhiteSpace(accountId)) throw new ArgumentNullException(nameof(accountId));
 
             
-            if (!string.IsNullOrWhiteSpace(start) && !DateTime.TryParse(start, out _))
+            if (!string.IsNullOrWhiteSpace(start) && !DateTime.TryParseExact(start, out _))
                 throw new ArgumentException("Invalid date format; please use dd-mm-yyy ie 05-01-2020");
              
             if (!string.IsNullOrWhiteSpace(end) &&  !DateTime.TryParse(end, out _)) 
