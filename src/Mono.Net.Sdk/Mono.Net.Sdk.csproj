@@ -20,10 +20,10 @@
     <RepositoryUrl>https://github.com/bigiayomide/mono-dotnet</RepositoryUrl>
     <TargetFrameworks>net5.0;netstandard2.0</TargetFrameworks>
     <RootNamespace>Mono.Net.Sdk</RootNamespace> 
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageReleaseNotes> 
       
-      Mono.co .NET SDK 1.0.1 Release Note! 
+      Mono.co .NET SDK 1.0.2 Release Note! 
 
       It adds support for the following APIs:
       - Get Account ID from Auth Code
