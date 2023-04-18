@@ -74,7 +74,7 @@ namespace Mono.Net.Sdk.Account
             if (!string.IsNullOrWhiteSpace(start) && !DateTime.TryParseExact(start, "dd-MM-yyyy", currentCulture, DateTimeStyles.None, out _))
                 throw new ArgumentException("Invalid date format; please use dd-mm-yyy ie 05-01-2020");
              
-            if (!string.IsNullOrWhiteSpace(end) &&  !DateTime.TryParse(end, "dd-MM-yyyy", currentCulture, DateTimeStyles.None, out _)) 
+            if (!string.IsNullOrWhiteSpace(end) &&  !DateTime.TryParseExact(end, "dd-MM-yyyy", currentCulture, DateTimeStyles.None, out _)) 
                 throw new ArgumentException("Invalid date format; please use dd-mm-yyy ie 05-01-2020");
             
             if(!string.IsNullOrWhiteSpace(type) && ((type != TransactionType.Credit) && (type != TransactionType.Debit)))
