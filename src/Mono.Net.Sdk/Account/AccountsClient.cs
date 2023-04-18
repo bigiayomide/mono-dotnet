@@ -64,13 +64,15 @@ namespace Mono.Net.Sdk.Account
             bool paginate = false,
             CancellationToken cancellationToken = default(CancellationToken))
         {
+            CultureInfo currentCulture = CultureInfo.CurrentCulture;
+
             if (string.IsNullOrWhiteSpace(accountId)) throw new ArgumentNullException(nameof(accountId));
 
             
-            if (!string.IsNullOrWhiteSpace(start) && !DateTime.TryParseExact(start, out _))
+            if (!string.IsNullOrWhiteSpace(start) && !DateTime.TryParseExact(start, "dd-MM-yyyy", currentCulture, DateTimeStyles.None, out _))
                 throw new ArgumentException("Invalid date format; please use dd-mm-yyy ie 05-01-2020");
              
-            if (!string.IsNullOrWhiteSpace(end) &&  !DateTime.TryParse(end, out _)) 
+            if (!string.IsNullOrWhiteSpace(end) &&  !DateTime.TryParse(end, "dd-MM-yyyy", currentCulture, DateTimeStyles.None, out _)) 
                 throw new ArgumentException("Invalid date format; please use dd-mm-yyy ie 05-01-2020");
             
             if(!string.IsNullOrWhiteSpace(type) && ((type != TransactionType.Credit) && (type != TransactionType.Debit)))
