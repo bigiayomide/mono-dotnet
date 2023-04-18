@@ -2,22 +2,22 @@
 
  <PropertyGroup>
     <!-- https://docs.microsoft.com/en-us/dotnet/core/tools/csproj#nuget-metadata-properties -->
-    <PackageId>Mono.Net.Sdk</PackageId>
-    <Title>Mono.Net SDK</Title>
+    <PackageId>Tranarc.Mono.Net.Sdk</PackageId>
+    <Title>Tranarc.Mono.Net SDK</Title>
     <Description>
       Mono .Net SDK for .NET v1
       Mono connect allows access to financial data from your users’ financial account. With Connect, you can get your customers transactions, real time balances, income etc.
       - Docs: https://docs.mono.co/
     </Description>
-    <AssemblyTitle>Mono.Net.Sdk</AssemblyTitle>
+    <AssemblyTitle>Tranarc.Mono.Net.Sdk</AssemblyTitle>
     <NeutralLanguage>en-GB</NeutralLanguage>
-    <Authors>Sunkanmi Ijatuyi</Authors>
-    <Copyright>Sunkanmi Ijatuyi</Copyright>
-    <AssemblyName>Mono.Net.Sdk</AssemblyName>
+    <Authors>Ayomide Fajobi</Authors>
+    <Copyright>Ayomide Fajobi</Copyright>
+    <AssemblyName>Tranarc.Mono.Net.Sdk</AssemblyName>
     <PackageProjectUrl>https://github.com/eskye/mono-dotnet</PackageProjectUrl> 
     <PackageTags>mono.co;financial;data;sdk</PackageTags>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/eskye/mono-dotnet</RepositoryUrl>
+    <RepositoryUrl>https://github.com/bigiayomide/mono-dotnet</RepositoryUrl>
     <TargetFrameworks>net5.0;netstandard2.0</TargetFrameworks>
     <RootNamespace>Mono.Net.Sdk</RootNamespace> 
     <Version>1.0.1</Version>
