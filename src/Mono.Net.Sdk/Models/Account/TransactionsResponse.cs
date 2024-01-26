@@ -22,7 +22,7 @@ namespace Mono.Net.Sdk.Models.Account
         public string Type { get; set; }
 
         [JsonProperty("amount")]
-        public long Amount { get; set; }
+        public long? Amount { get; set; }
 
         [JsonProperty("narration")]
         public string Narration { get; set; }
@@ -31,6 +31,9 @@ namespace Mono.Net.Sdk.Models.Account
         public DateTimeOffset Date { get; set; }
 
         [JsonProperty("balance")]
-        public long Balance { get; set; }
+        public long? Balance { get; set; }
+        
+        [JsonProperty("currency")]
+        public string Currency { get; set; }
     }
 }
